@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+
+.container{
+    position: relative;
+    width: 1500px;
+    height: 800px;
+    margin: 4% auto;
+}
+
+.slider-wrapper{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.slider-content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    transition: all .8s linear;
+}
+
+.slider-content .slider_box{
+    width: 100%;
+    height: 100%;
+    flex: 1 0 100%;
+}
+
+.slider-content .slider_box img{
+    width: 100%;
+    height: 100%;
+}
+
+.slider_nav{
+    width: 97.3%;
+    position: absolute;
+    display: flex;
+    top: 46%;
+    left: 20px;
+    justify-content: space-between;
+}
+
+.slider_nav-prev,
+.slider_nav-next{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 1.3rem;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.slider_radio{
+    position: absolute;
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    bottom: 2%;
+    right: 43.3%;
+    /* background-color: #fff; */
+}
+
+.slider_radio .radio{
+    width: 20px;
+    height: 20px;
+    /* border-radius: 50%; */
+    cursor: pointer;
+    border: 1px solid #fff;
+}
+
+.slider_radio .radio:hover{
+    width: 20px;
+    height: 20px;
+    background-color: rgba(255, 0, 0, 0.150);
+}
+
+.active{
+    background-color: red;
+    transition: .2s;
+}
